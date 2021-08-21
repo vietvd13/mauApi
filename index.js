@@ -1,11 +1,12 @@
 require('./config/dbconnect');
+require('dotenv').config();
 const expess = require('express');
 const bodyParser = require('body-parser');
 
 const cors = require('cors');
 const gift = require('./routes/gift.route');
 const app = expess();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(cors());
 app.use(bodyParser.json());

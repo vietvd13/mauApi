@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 //Link đến database mongo altes
-const dbConfig = `mongodb+srv://vietvd13:vuducviet@cluster0.fusbm.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`;
+const dbConfig = `mongodb+srv://thangledinh:nhun@cluster0.bdfqr.mongodb.net/test`;
 
 mongoose.set('useCreateIndex', true);
 mongoose.set('useFindAndModify', false);

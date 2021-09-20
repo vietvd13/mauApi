@@ -6,6 +6,7 @@ exports.gift_create = function(req, res) {
         {
             _id: mongoose.Types.ObjectId(),
             gift: req.body.gift,
+            clicked: req.body.clicked
         }
     );
 
@@ -16,7 +17,8 @@ exports.gift_create = function(req, res) {
             })
         }else{
             res.json({
-                message: 'Add successfully'
+                message: 'Add successfully',
+                data: gift
             })
         }
     })

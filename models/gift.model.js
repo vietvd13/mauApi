@@ -7,6 +7,10 @@ const giftSchema = new Schema({
         type: String,
         required: true,
     },
+    clicked: {
+        type: Boolean,
+        required: true,
+    }
 }, {
     timestamps: true
 });
